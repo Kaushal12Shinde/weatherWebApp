@@ -1,0 +1,97 @@
+.forecast{
+    width: 535px;
+    height: 338px;
+    display: flex;
+    align-items: center;
+    
+    .forecastinfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 535px;
+        height: 235px;
+        gap: 20px;
+        .model{
+            padding: 0 20px;
+            display:  flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 25px;
+            border: 1px solid white;
+            gap: 10px;
+            position: relative;
+            background: rgba(255, 255, 255, 0.34);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            .anime{
+                position: absolute;
+                top: -30px;
+                left: 10px;
+                width: 90px;
+                height: 100px;
+            }
+            .temp{
+                margin: 0;
+                margin-left: 80px;
+                font-weight: 500;
+                font-size: 40px;
+                color: black;
+                text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+            }
+            .condition{
+                .cond{
+                    margin: 0;
+                    font-weight: 500;
+                    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+                }
+                .day{
+                    font-size: 13px;
+                    margin: 0;
+                    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+                }
+            }
+
+        }
+    }
+}
+@media (max-width: 426px) {
+    .forecast{
+        width: 300px;
+        height: 200px;
+        margin-top: 20px;
+        .forecastinfo{
+            width: 300px;
+            height: 200px;
+            .model{
+                padding:10px;
+                flex-direction: column;
+                gap: 0px;
+                justify-content: center;
+                align-items: center;
+                .anime{
+                    display: none;
+                }
+                .temp{
+                    font-size: 18px;
+                    margin: 0;
+                }
+                .condition{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .cond{
+                        font-size: 16px;
+                    }
+                    .day{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
